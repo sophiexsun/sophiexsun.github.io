@@ -199,6 +199,7 @@ Cities
 
 .cities{
     max-width: 900px;
+    margin-bottom: 20px;
 }
 
 .cities h4{
@@ -223,7 +224,7 @@ Cities
 
 .city-text{
     position: absolute;
-    bottom: 35px;
+    bottom: 50px;
     width:100%;
     color: #fff;
     padding-left: 10px;
@@ -234,8 +235,13 @@ Cities
 
 .city-text h4{
     color:#fff;
-    font-size: 90%;
+    font-size: 120%;
     opacity: 1;
+    margin-bottom: 15px;
+}
+
+.city-text p{
+    font-size:80%;
 }
 
 
