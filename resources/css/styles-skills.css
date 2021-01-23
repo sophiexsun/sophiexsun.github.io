@@ -1,0 +1,201 @@
+/*-------------------------
+dark green: #006266/ lighter #008388 Turkish Aqua
+brown: #553b2f
+background color: #f8f2f2 on browser
+-------------------------*/
+
+/*-------------------------
+BASIC SETUP
+-------------------------*/
+
+*{
+    margin:auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #e5e5e5;
+    color:#553b2f;
+    font-family: 'Montserrat','Arial',sans-serif;
+    font-weight: 300;
+    font-size:20px;
+    text-rendering: optimizeLegibility
+}
+
+.row{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+section{padding:10px 0;}
+
+.box{padding:1%}
+
+
+h2{
+    color:#553b2f;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-size:120%;
+    word-spacing: 2px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    width:70%;
+    text-align: center;
+}
+
+.section_intro{
+    line-height: :100%;
+    width: 70%;
+    margin-left: 0 15%;
+    text-align: center;
+    margin-bottom:10px;
+    font-size: 80%
+}
+
+/*-------------------------
+NAVIGAION
+-------------------------*/
+
+/* TOP NAVIGATION */
+
+
+header{
+    background-size:cover;
+    background-position: center;
+    height:10vh;
+}
+
+.logo{
+    height: 33px;
+    width: auto;
+    float: left;
+    margin-top:12px;
+    margin-left:20px;
+}
+
+.top-nav{
+    float:right;
+    list-style:none;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.top-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.top-nav li a:link,
+.top-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.7s;
+}
+
+.top-nav li a:hover,
+.top-nav li a:active{
+    border-bottom: 2px solid #006266;
+}
+
+/* STICKY NAVIGATION */
+
+.sticky {
+    position: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),#000),url(img/arch.png);
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+/*-------------------------
+Elevator
+-------------------------*/
+
+.elevator-speech{
+    margin-top: 10px;
+    max-height: 100px;
+}
+
+.elevator-speech img{
+    border-radius: 50%;
+    max-width: 50%;
+    float:right;
+}
+
+
+
+/*-------------------------
+FOOTER
+-------------------------*/
+
+footer{
+    font-size: 80%;
+}
+
+.footer-nav{
+    margin-top:0;
+    padding:0;
+    list-style: none;
+    float:left;
+}
+
+.socialmedia{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.socialmedia li{
+    display:inline-block;
+    margin: 5px 10px;
+}
+
+.footer-nav li a: link,
+.footer-nav li a: visited{
+    text-decoration: none;
+    border:0;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: color 0.7s;
+}
+
+.socialmedia li a: link,
+.socialmedia li a: visited{
+    border:0;
+    transition: color 0.7s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    padding: 8px 0;
+    color: #006266;
+    border-bottom: 2px solid #006266;
+    transition: border-bottom 0.7s; 
+}
+
+.link-icon{
+    height:20px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: right;
+}
+
+footer p{
+    position: absolute;
+    margin-top: -3%;
+    margin-left: 37%;
+    font-size: 80%;
+    color:#006266;
+    text-align: center;
+    
+}
