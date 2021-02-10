@@ -171,14 +171,14 @@ Industries
 Universities
 -------------------------*/
 
-.path-photo school img{
-    filter:brightness(70%);
-}
-
 .university{
     width: 100%;
     margin: 0;
     overflow: hidden;
+}
+
+.university img{
+    margin-left: 45px;
 }
 
 .university p{
@@ -244,6 +244,39 @@ Cities
     font-size:80%;
 }
 
+
+
+/*-------------------------
+Logo Meaning
+-------------------------*/
+
+.sslogo{
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+.sslogo img{
+    max-width: 30%;
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.sslogo h2{
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+    margin-left:0px;
+    
+}
+
+.sslogo p{
+    margin-top: 15px;
+    max-height: 100px;
+    max-width: 830px;
+    font-size: 80%;
+    margin-bottom: 10px;
+}
 
 /*-------------------------
 FOOTER

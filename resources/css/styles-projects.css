@@ -32,6 +32,14 @@ section{padding:10px 0;}
 
 .box{padding:1%}
 
+.horizontal{
+    display:flex;
+}
+
+.vertical{
+    flex:50%;
+    padding:2px;
+}
 
 h2{
     color:#553b2f;
@@ -53,6 +61,29 @@ h2{
     margin-bottom:10px;
     font-size: 80%
 }
+
+h3{
+    color:#553b2f;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-size:100%;
+    word-spacing: 1px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    width:100%;
+    text-align: center;
+}
+
+h4{
+    color:#553b2f;
+    font-size:90%;
+    word-spacing: 1px;
+    margin-top:0px;
+    margin-bottom: 5px;
+    width:100%;
+    text-align: left;
+}
+
 
 /*-------------------------
 NAVIGAION
@@ -115,22 +146,138 @@ header{
     z-index: 9999;
 }
 
+/* SIDEBAR */
+
+#menu{
+    padding: 0;
+    position: absolute;
+    right:0px;
+    top: 50px;
+    width: 14em;
+}
+
+.vertical-1-of-2{
+    height:50%;
+}
+
+.consumerstudies{
+    border-left: 5px solid #008388;
+    margin: 10px 0;
+}
+
+.socialstudies{
+    border-left: 5px solid #553b2f;
+    margin: 10px 0;
+}
+
+#menu p{
+    color:#553b2f;
+    font-size:60%;
+    word-spacing: 1px;
+    margin-top:5px;
+    margin-bottom: 10px;
+    width:100%;
+    text-align: left;
+}
+
+.project-photo img{
+    border-radius: 10%;
+    max-width: 90%;
+    float: right;
+    margin-right: 2px;
+}
+
+.sidebar a:link,
+.sidebar a:visited{
+    padding: 0;
+}
 /*-------------------------
-Elevator
+Project
 -------------------------*/
 
-.elevator-speech{
-    margin-top: 10px;
-    max-height: 100px;
+.project-demo{
+    position: relative;
+    top: 10px;
+    width: 60em;
+    min-height: 100vh;
 }
 
-.elevator-speech img{
-    border-radius: 50%;
-    max-width: 50%;
-    float:right;
+.highlights{
+    margin: 20px 10px;
+    padding:5px;
 }
 
+.highlights h5{
+    color:#006266;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-size:70%;
+    word-spacing: 1px;
+    margin-top:1px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    width:100%;
+    text-align: center;
+}
 
+.highlights p{
+    color:#553b2f;
+    font-size:70%;
+    word-spacing: 1px;
+    margin-top:5px;
+    margin-bottom: 20px;
+    width:100%;
+    text-align: center;
+}
+
+.project-details{
+    margin: 5px 10px;
+    padding:10px 60px;
+}
+
+.project-details h2{
+    color:#553b2f;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-size:150%;
+    line-height: 40px;
+    word-spacing: 1px;
+    margin-top:5px;
+    margin-bottom: 30px;
+    padding-right: 5px;
+    width:100%;
+    text-align: center;
+}
+
+.project-details h5{
+    color:#006266;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-size:100%;
+    word-spacing: 1px;
+    margin-top:15px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    width:100%;
+    text-align: center;
+}
+
+.project-details p{
+    color:#553b2f;
+    font-size:80%;
+    word-spacing: 1px;
+    margin-top:5px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    width:100%;
+    text-align: left;
+}
+
+.project-details img{
+    border-radius: 1%;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
 
 /*-------------------------
 FOOTER
@@ -139,6 +286,7 @@ FOOTER
 
 footer{
     font-size: 80%;
+
 }
 
 .footer-nav{

@@ -265,14 +265,14 @@ PATH
 -------------------------*/
 
 .path-matrix{
-    margin: 30px auto;
-    width:50%;
+    margin: 20px auto;
+    width:40%;
 }
 
 
 .path-text{
     position: absolute;
-    bottom: 35px;
+    bottom: 70px;
     width:100%;
     color: #553b2f;
     padding-left: 10px;
@@ -283,13 +283,13 @@ PATH
 
 .path-text h4{
     color:#fff;
-    font-size: 90%;
+    font-size: 100%;
     opacity: 1;
 }
 
 .path-photo{
-    width: 100%;
-    margin: 0;
+    width: 40%;
+    margin: 0px;
     overflow: hidden;
 }
 
@@ -333,15 +333,9 @@ footer{
 .footer-nav li a: visited{
     text-decoration: none;
     border:0;
-    text-transform: uppercase;
+    color: #006266;
     border-bottom: 2px solid transparent;
-    transition: color 0.7s;
-}
-
-.socialmedia li a: link,
-.socialmedia li a: visited{
-    border:0;
-    transition: color 0.7s;
+    transition: border-bottom 0.7s;
 }
 
 .footer-nav li a:hover,
@@ -349,7 +343,6 @@ footer{
     padding: 8px 0;
     color: #006266;
     border-bottom: 2px solid #006266;
-    transition: border-bottom 0.7s; 
 }
 
 .link-icon{
