@@ -194,15 +194,19 @@ FOOTER
 footer{
     font-size: 80%;
     position: absolute;
-    top:1100px;
+    top:1200px;
     width:100%;
 }
+
 
 .footer-nav{
     margin-top:0;
     padding:0;
     list-style: none;
     float:left;
+    font-size: 80%;
+    color: #006266;
+    
 }
 
 .socialmedia{

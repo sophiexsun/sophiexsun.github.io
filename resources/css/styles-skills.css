@@ -58,14 +58,14 @@ h2{
 
 .horizon{
     max-width: 1140px;
-    margin:0;
-    height: 350px;
+    height: 400px;
 }
 
 .horizon img{
-    margin-left:50px;
+    margin-left:30px;
     margin-top: 20px;
     border-radius: 10%;
+    vertical-align: top;
 }
 /*-------------------------
 NAVIGAION
@@ -168,6 +168,8 @@ footer{
     padding:0;
     list-style: none;
     float:left;
+    font-size: 80%;
+    color: #006266;   
 }
 
 .socialmedia{

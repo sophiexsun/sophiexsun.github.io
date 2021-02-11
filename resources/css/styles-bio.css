@@ -292,8 +292,10 @@ footer{
     padding:0;
     list-style: none;
     float:left;
+    font-size: 80%;
+    color: #006266;
+    
 }
-
 .socialmedia{
     list-style: none;
     float: right;

@@ -188,11 +188,10 @@ Project
 -------------------------*/
 
 .project-demo{
-    position: absolute;
-    top: 70px;
-    width: 48em;
-    left: 30px;
+    max-width: 1000px;
+    margin-bottom: 20px;
     min-height: 100vh;
+    margin-left:25px;
 }
 
 .highlights{

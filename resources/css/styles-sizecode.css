@@ -205,11 +205,10 @@ Project
 -------------------------*/
 
 .project-demo{
-    position: relative;
-    top: 10px;
-    width: 48em;
-    margin-left:10px;
+    max-width: 900px;
+    margin-bottom: 20px;
     min-height: 100vh;
+    margin-left:45px;
 }
 
 .project-details{
