@@ -41,6 +41,15 @@ section{padding:10px 0;}
     padding:2px;
 }
 
+.vertical2-3{
+    flex:66%
+    padding:2px;
+}
+
+.vertical1-3{
+    flex:33%
+    padding:2px;
+}
 h2{
     color:#553b2f;
     letter-spacing:1px;
@@ -196,14 +205,15 @@ Project
 -------------------------*/
 
 .project-demo{
-    position: relative;
-    top: 10px;
-    width: 60em;
+    position: absolute;
+    top: 70px;
+    width: 48em;
+    left: 30px;
     min-height: 100vh;
 }
 
 .highlights{
-    margin: 20px 10px;
+    margin: 40px 10px;
     padding:5px;
 }
 
@@ -231,7 +241,7 @@ Project
 }
 
 .project-details{
-    margin: 5px 10px;
+    margin: 20px 40px 20px 10px;
     padding:10px 60px;
 }
 

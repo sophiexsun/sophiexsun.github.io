@@ -34,24 +34,30 @@ section{padding:10px 0;}
 
 
 h2{
-    color:#553b2f;
+    color:#006266;
     letter-spacing:1px;
     text-transform:uppercase;
     font-size:120%;
     word-spacing: 2px;
-    margin-top:5px;
+    margin-top:2px;
     margin-bottom: 5px;
-    width:70%;
-    text-align: center;
+    margin-left:60px;
+    width:50%;
+    text-align: left;
+    display: inline-block;
 }
 
 .section_intro{
     line-height: :100%;
-    width: 70%;
+    width: 40%;
     margin-left: 0 15%;
-    text-align: center;
+    text-align: left;
+    margin-top:10px;
     margin-bottom:10px;
-    font-size: 80%
+    font-size: 70%;
+    position: absolute;
+    right:20px;
+    top:70px;
 }
 
 /*-------------------------
@@ -118,22 +124,68 @@ header{
 
 
 /*-------------------------
-Elevator
+CATEGORY
 -------------------------*/
 
-.elevator-speech{
-    margin-top: 10px;
-    max-height: 100px;
+.tion{
+    width:20em;
+    position: absolute;
+    left:20px;
+    top: 250px;
+    width: 10em;
 }
 
-.elevator-speech img{
-    border-radius: 50%;
-    max-width: 50%;
-    float:right;
+.distribution{
+    margin-bottom: 320px;
+}
+
+.tion p{
+    font-size: 60%;
+    
 }
 
 
+/*-------------------------
+GRAPHS
+-------------------------*/
 
+.graphland{
+    width:50em;
+    margin-left: 12em;
+    margin-top:20px;
+    height: 200px;
+}
+
+.graphland img{
+    width:100%;
+    border-radius: 2%;
+}
+
+.plot-spot{
+    display:flex;
+    font-size: 60%;
+
+}
+.vertical1-3{
+    flex:33%;
+    padding:2px;    
+}
+
+.vertical2-3{
+    flex:66%;
+    padding:2px;    
+}
+
+#plotty{
+    width:100%;
+}
+
+#plotty:hover{
+    position:absolute;
+    width:40%;
+    z-index: 9999;
+    display:block;
+}
 /*-------------------------
 FOOTER
 -------------------------*/
@@ -141,6 +193,9 @@ FOOTER
 
 footer{
     font-size: 80%;
+    position: absolute;
+    top:1100px;
+    width:100%;
 }
 
 .footer-nav{

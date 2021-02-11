@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/styles-sizecode.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="vendors/logos/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="vendors/logos/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="vendors/logos/favicon-16x16.png">
+        <link rel="manifest" href="vendors/logos/site.webmanifest">
+        <link rel="mask-icon" href="vendors/logos/safari-pinned-tab.svg" color="#006266">
+        <meta name="msapplication-TileColor" content="#006266">
+        <meta name="theme-color" content="#ffffff">
+        <title>Data Analytics and Visualization | Sophie Sun | Projects</title>
+    </head>
+    <body>
+        <header>
+            <nav class="sticky">
+                <div class="row">
+                    <a href="index.html"><img src="vendors/logos/android-chrome-512x512.png" alt="sophielogo" class="logo"></a>
+                    <ul class="top-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="visuals.html">Visuals</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="bio.html">Bio</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <!---sidebar -->
+        <div id="menu">
+                <div class="nav vertical-1-of-2">
+                    <div class="consumerstudies">
+                        <h3>Consumer Studies</h3>
+                            <div class="sidebar">
+                                <a href="projects.html" class="project-photo">
+                                    <div class="col span-1-of-4">
+                                        <img src="vendors/images/cookie.jpg" alt="finding_perfect_chocolate_chip_cookie" style="width:100%">
+                                    </div>
+                                    <div class="col span-3-of-4">
+                                        <h4>Cookie Recipe</h4>
+                                        <p>Find the perfect chocolate chip cookie recipe</p>
+                                    </div>
+                                </a>
+                            </div>
+                        
+                        
+                        <div class="sidebar">
+                            <a href="shirtsize.html" class="project-photo">
+                                <div class="col span-1-of-4">
+                                   <img src="vendors/images/shirtsize.jpg" alt="finding_shirt_size_for_CA_consumers" style="width:100%">
+                                </div>
+                                <div class="col span-3-of-4">
+                                    <h4>Size Ratio</h4>
+                                    <p>Quantify the shirt size for CA consumers</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="sidebar">
+                            <a href="scentedtextile.html" class="project-photo">
+                                <div class="col span-1-of-4">
+                                <img src="vendors/images/textile.jpg" alt="scented_fabric_preference" style="width:100%">
+                                </div>
+                                <div class="col span-3-of-4">
+                                    <h4>Scented Textile</h4>
+                                    <p>Discover cultural influence on scented textile product preference</p>
+                                </div>
+                            </a>
+                        </div>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More studies to be added &nbsp;&sdot;&sdot;&sdot;</p>
+                    </div>
+                </div>
+                
+                <div class="nav vertical-1-of-2">
+                    <div class="socialstudies">
+                        <h3>Social Studies</h3>                        
+                        <div class="sidebar">
+                            <a href="covid.html" class="project-photo">
+                                <div class="col span-1-of-4">
+                                    <img src="vendors/images/covid.jpg" alt="evaluating_covid_vaccine_acceptance_factors" style="width:100%">
+                                </div>
+                                <div class="col span-3-of-4">
+                                    <h4>Vaccine Acceptance</h4>
+                                    <p>Find out what make people willing to take COVID-19 vaccines</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        
+                         <div class="sidebar">
+                            <a href="hemp.html" class="project-photo">
+                                <div class="col span-1-of-4">
+                                    <img src="vendors/images/hemp.jpg" alt="hemp" style="width:100%">
+                                </div>
+                                <div class="col span-3-of-4">
+                                    <h4>Drug Consumption</h4>
+                                    <p>Profile frequent marijuana users based on demographic and psychographic attributes</p>
+                            </div>
+                            </a>
+                        </div>
+                        
+                         <div class="sidebar">
+                             <a href="mathscore.html" class="project-photo">
+                                <div class="col span-1-of-4">
+                                    <img src="vendors/images/school.jpg" alt="school_performance" style="width:100%">
+                                </div>
+                                <div class="col span-3-of-4">
+                                    <h4>Math Score</h4>
+                                    <p>Sort out main factors at play for secondary schooler's math performance</p>
+                                </div>
+                            </a>
+                        </div>
+                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More studies to be added &nbsp;&sdot;&sdot;&sdot;</p>
+                    </div>
+                </div>
+        </div>
+        
+        <!---main body -->
+        
+        <div class="project-demo">
+            <div class="project-details">
+                <h2>Height and Weight to Size Conversion Code</h2>
+                
+                                <div class="col span-4-of-9">
+                <h5>Men’s Size Conversion</h5>
+
+                <textarea disabled cols="60" rows="46"> 
+    def sizing_men (height, weight):
+    """function to convert height and weight to sizing"""
+        if 160 <= height < 185 and 50 <= weight < 65:
+            return "S"
+        elif 185 <= height < 190 and 55 <= weight <60:
+            return "S"
+        elif 160 <= height < 180 and 65 <= weight < 75:
+            return "S"
+        elif 160 <= height < 170  and 75 <= weight < 80:
+            return "S"
+        elif 185 <= height < 195  and 60 <= weight < 80:
+            return "M"
+        elif 185 <= height < 190  and 80 <= weight < 85:
+            return "M"
+        elif 170 <= height < 185  and 75 <= weight < 90:
+            return "M"
+        elif 180 <= height < 185  and 65 <= weight < 75:
+            return "M"
+        elif 160 <= height < 170  and 80 <= weight < 90:
+            return "M"
+        elif 160 <= height < 185  and 90 <= weight < 110:
+            return "L"
+        elif 185 <= height < 190  and 85 <= weight < 105:
+            return "L"
+        elif 190 <= height < 195  and 80 <= weight < 100:
+            return "L"
+        elif 195 <= height < 200  and 65 <= weight < 95:
+            return "L"
+        elif 200 <= height < 205  and 70 <= weight < 90:
+            return "L"
+        elif 205 <= height < 210  and 75 <= weight < 85:
+            return "L"
+        elif 185 <= height < 190  and 105 <= weight < 110:
+            return "XL"
+        elif 190 <= height < 195  and 100 <= weight < 110:
+            return "XL"  
+        elif 195 <= height < 200  and 95 <= weight < 110:
+            return "XL" 
+        elif 200 <= height < 205  and 90 <= weight < 110:
+            return "XL" 
+        elif 205 <= height < 210  and 85 <= weight < 110:
+            return "XL" 
+        else:
+            return "NA"
+                            </textarea>
+                </div> 
+                
+                
+                <div class="col span-4-of-9">
+                    <h5>Women’s Size Conversion</h5>
+
+                    <textarea disabled cols="65" rows="52"> 
+    def sizing_wmn (height, weight):
+    """function to convert height and weight to sizing"""
+        if height < 60 and weight < 100:
+            return "XXS"
+        elif 60 <= height < 67 and weight <100:
+            return "XS"
+        elif 62 <= height < 66 and 100 <= weight < 120:
+            return "XS"
+        elif (height < 62 or 66 <=height < 68) and 100 <= weight < 120:
+            return "S"
+        elif height < 71 and 120 <= weight < 130:
+            return "S"
+        elif 71 <= height <73 and 120 <= weight < 130:
+            return "M"
+        elif (height < 60 or 71 < height) and 130 <= weight < 140:
+            return "M"
+        elif 60 <= height < 71 and 130 <= weight < 140:
+            return "M"
+        elif 40 < height  and 140 <= weight < 150:
+            return "M"
+        elif 61 <= height and 150 <= weight < 160:
+            return "M"
+        elif height < 61  and 150 <= weight < 160:
+            return "L"
+        elif height < 70 and 160 <= weight < 170:
+            return "L"
+        elif 70 <= height and 160 <= weight < 170:
+            return "M"
+        elif height < 60  and 170 <= weight < 180:
+            return "XL"
+        elif 60 <= height and 170 <= weight < 180:
+            return "L"
+        elif 60 <= height < 63 and 180 <= weight < 190:
+            return "XL"
+        elif 63 < height and 180 <= weight < 190:
+            return "L"
+        elif 60 <= height < 63 and 190 <= weight < 200:
+            return "XXL"
+        elif 63 < height < 70 and 190 <= weight < 200:
+            return "XL"
+        elif 70 <= height and 190 <= weight < 200:
+            return "L"
+        elif 63 < height < 70 and 200 <= weight < 210:
+            return "XXL"
+        elif 70 <= height and 200 <= weight < 210:
+            return "XL"
+        elif 70 <= height and 200 <= weight:
+            return "XXL"
+        else:
+            return "NA"
+                        </textarea>
+                
+                
+                </div>
+                
+     
+            </div>
+        </div>
+            
+           <footer class="footer">
+                <div class="row">
+                    <div class ="col span-1-of-2">
+                        <ul class="footer-nav">
+                            <li><a href="index.html" style="text-decoration: none">Home</a></li>
+                            <li><a href="projects.html" style="text-decoration: none">Projects</a></li>
+                            <li><a href="visuals.html" style="text-decoration: none">Visuals</a></li>
+                            <li><a href="skills.html" style="text-decoration: none">Skills</a></li>
+                            <li><a href="bio.html" style="text-decoration: none">Bio</a></li>
+                        </ul>
+                    </div>
+                    <div class ="col span-1-of-2">
+                        <ul class="socialmedia">
+                            <li><a href="https://github.com/sophiexsun" target="_blank" rel="noopener noreferrer"><img src="vendors/icons/logo-github.svg", alt="github icon", class="link-icon"></a></li>
+                            <li><a href="https://www.linkedin.com/in/sophiexsun/" target="_blank" rel="noopener noreferrer"><img src="vendors/icons/logo-linkedin.svg", alt="linkedin icon", class="link-icon"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCoA7RGHJD-32POX3I9V0q1Q" target="_blank" rel="noopener noreferrer"><img src="vendors/icons/logo-youtube.svg", alt="youtube icon", class="link-icon"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p> &copy; 2021 by Sophie X Sun. All Rights Reserved. </p>
+                </div>
+            </footer> 
+            
+            
+        </div>
+    </body>
+</html>

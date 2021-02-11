@@ -84,12 +84,13 @@ h4{
     text-align: left;
 }
 
+
 textarea{
     outline:none;
     resize:none;
-    font-size: 70%;
-    line-height: 22px;
-    margin-left: 75px;
+    font-size: 60%;
+    line-height: 20px;
+    margin-left: 20px;
 }
 
 
@@ -206,14 +207,14 @@ Project
 .project-demo{
     position: relative;
     top: 10px;
-    width: 40em;
-    margin-left:100px;
+    width: 48em;
+    margin-left:10px;
     min-height: 100vh;
 }
 
 .project-details{
-    margin: 5px 10px;
-    padding:10px 60px;
+    margin: 5px 0px;
+    padding:10px 0px;
 }
 
 .project-details h2{
@@ -238,27 +239,11 @@ Project
     word-spacing: 1px;
     margin-top:15px;
     margin-bottom: 10px;
-    padding-right: 5px;
+    padding: 5px;
     width:100%;
     text-align: center;
 }
 
-.project-details p{
-    color:#553b2f;
-    font-size:80%;
-    word-spacing: 1px;
-    margin-top:5px;
-    margin-bottom: 10px;
-    line-height: 20px;
-    width:100%;
-    text-align: left;
-}
-
-.project-details img{
-    border-radius: 1%;
-    margin-top:10px;
-    margin-bottom: 20px;
-}
 
 
 /*-------------------------

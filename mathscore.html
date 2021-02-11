@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/styles-sizecode.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/styles-projects.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -38,17 +38,17 @@
                     <div class="consumerstudies">
                         <h3>Consumer Studies</h3>
                         
-                         <a href="/projects.html" class="project-photo">
-                            <div class="sidebar">
+                        <div class="sidebar">
+                            <a href="projects.html" class="project-photo">
                                 <div class="col span-1-of-4">
                                     <img src="vendors/images/cookie.jpg" alt="finding_perfect_chocolate_chip_cookie" style="width:100%">
                                 </div>
                                 <div class="col span-3-of-4">
                                     <h4>Cookie Recipe</h4>
                                     <p>Find the perfect chocolate chip cookie recipe</p>
-                                </div>
-                            </div>
-                        </a>
+                                </div>                    
+                            </a>
+                        </div>
                         
                         <div class="sidebar">
                             <a href="shirtsize.html" class="project-photo">
@@ -81,6 +81,7 @@
                  <div class="nav vertical-1-of-2">
                     <div class="socialstudies">
                         <h3>Social Studies</h3>
+                        
                          <div class="sidebar">
                             <a href="covid.html" class="project-photo">
                                 <div class="col span-1-of-4">
@@ -117,126 +118,103 @@
                             </a>
                         </div>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More studies to be added &nbsp;&sdot;&sdot;&sdot;</p>
+                        
                     </div>
                  </div>  
-        </div>       
+        </div>     
         
         <!---main body -->
         
         <div class="project-demo">
-            <div class="project-details">
-                <h2>Height and Weight to Size Conversion Code</h2>
-                <div class="col-1-of-2">
-                    <h5>Women’s Size Conversion</h5>
-
-                    <textarea disabled cols="70" rows="52"> 
-    def sizing_wmn (height, weight):
-    """function to convert height and weight to sizing"""
-        if height < 60 and weight < 100:
-            return "XXS"
-        elif 60 <= height < 67 and weight <100:
-            return "XS"
-        elif 62 <= height < 66 and 100 <= weight < 120:
-            return "XS"
-        elif (height < 62 or 66 <=height < 68) and 100 <= weight < 120:
-            return "S"
-        elif height < 71 and 120 <= weight < 130:
-            return "S"
-        elif 71 <= height <73 and 120 <= weight < 130:
-            return "M"
-        elif (height < 60 or 71 < height) and 130 <= weight < 140:
-            return "M"
-        elif 60 <= height < 71 and 130 <= weight < 140:
-            return "M"
-        elif 40 < height  and 140 <= weight < 150:
-            return "M"
-        elif 61 <= height and 150 <= weight < 160:
-            return "M"
-        elif height < 61  and 150 <= weight < 160:
-            return "L"
-        elif height < 70 and 160 <= weight < 170:
-            return "L"
-        elif 70 <= height and 160 <= weight < 170:
-            return "M"
-        elif height < 60  and 170 <= weight < 180:
-            return "XL"
-        elif 60 <= height and 170 <= weight < 180:
-            return "L"
-        elif 60 <= height < 63 and 180 <= weight < 190:
-            return "XL"
-        elif 63 < height and 180 <= weight < 190:
-            return "L"
-        elif 60 <= height < 63 and 190 <= weight < 200:
-            return "XXL"
-        elif 63 < height < 70 and 190 <= weight < 200:
-            return "XL"
-        elif 70 <= height and 190 <= weight < 200:
-            return "L"
-        elif 63 < height < 70 and 200 <= weight < 210:
-            return "XXL"
-        elif 70 <= height and 200 <= weight < 210:
-            return "XL"
-        elif 70 <= height and 200 <= weight:
-            return "XXL"
-        else:
-            return "NA"
-                        </textarea>
-                
-                
+            <div class ="col span-1-of-4">
+                <div class="highlights">
+                    <h5>Year</h5>
+                    <p>2019</p>
+                    <h5>Scope</h5>
+                    <p>Math grades of students<br>at two Portuguese<br>secondary schools</p>
+                    <h5>Variables</h5>
+                    <p>30 variables<br>demographic<br>educational<br>relational<br>time management</p>
+                    <h5>Observations</h5>
+                    <p>495</p>
+                    <h5>Script</h5>
+                    <p>R<br>olsrr</p>
+                    <h5>Method</h5>
+                    <p>Stepwise regression</p>
                 </div>
-                
-                <div class="col-1-of-2">
-                <h5>Men’s Size Conversion</h5>
-
-                <textarea disabled cols="70" rows="47"> 
-    def sizing_men (height, weight):
-    """function to convert height and weight to sizing"""
-        if 160 <= height < 185 and 50 <= weight < 65:
-            return "S"
-        elif 185 <= height < 190 and 55 <= weight <60:
-            return "S"
-        elif 160 <= height < 180 and 65 <= weight < 75:
-            return "S"
-        elif 160 <= height < 170  and 75 <= weight < 80:
-            return "S"
-        elif 185 <= height < 195  and 60 <= weight < 80:
-            return "M"
-        elif 185 <= height < 190  and 80 <= weight < 85:
-            return "M"
-        elif 170 <= height < 185  and 75 <= weight < 90:
-            return "M"
-        elif 180 <= height < 185  and 65 <= weight < 75:
-            return "M"
-        elif 160 <= height < 170  and 80 <= weight < 90:
-            return "M"
-        elif 160 <= height < 185  and 90 <= weight < 110:
-            return "L"
-        elif 185 <= height < 190  and 85 <= weight < 105:
-            return "L"
-        elif 190 <= height < 195  and 80 <= weight < 100:
-            return "L"
-        elif 195 <= height < 200  and 65 <= weight < 95:
-            return "L"
-        elif 200 <= height < 205  and 70 <= weight < 90:
-            return "L"
-        elif 205 <= height < 210  and 75 <= weight < 85:
-            return "L"
-        elif 185 <= height < 190  and 105 <= weight < 110:
-            return "XL"
-        elif 190 <= height < 195  and 100 <= weight < 110:
-            return "XL"  
-        elif 195 <= height < 200  and 95 <= weight < 110:
-            return "XL" 
-        elif 200 <= height < 205  and 90 <= weight < 110:
-            return "XL" 
-        elif 205 <= height < 210  and 85 <= weight < 110:
-            return "XL" 
-        else:
-            return "NA"
-                            </textarea>
-                </div>      
+            
             </div>
-        </div>
+            <div class ="col span-3-of-4">
+                <div class="project-details">
+                    <h2>What Land You <br>A High Math Score?</h2>
+                    <p>Math performance in school  is a result of the push-pull of many factors at play. In this group project, we used stepwise regression to filter out insignificant factors and came down to below formula to dissect the factors that explain the math score. While performing model selection, we used AIC and BIC to detect any overfitting.</p>
+                    
+                    <h5>Findings</h5>
+                    <p>Math score ~ previous failure + mother’s job + log(absences+1) + going out frequency + gender + amount of free time + amount of study time + having family educational support + having extra educational support</p>
+                    
+                    <h4>The pulling-down factors</h4>
+                    <p>Previous performance is a strong predictor of future poor performance at math. Having family educational support or having extra educational support such as tutoring are also an indicator that the students need extra help and in the short run they may still have poor math score. Going out 3 times a week and more free time (non-study time) are related to lower math scores </p>
+                    <h4>The pushing-up factors</h4>
+                    <p>More study time helps. Being a boy helps! Absence was transformed into log, because it is heavily skewed to 0 absence and only very few students have some absence. Log of absence actually has a positive coefficient to math score. Mother’s profession if in health is a big push to math score and civil service help too. But if mother is a teacher, it is negative to the math score. </p>
+                    
+                    <img src="projects/6mathscore/gender_math.png" style="width:100%">
+                    
+                    <p>Below is distribution views of math score to check if this is a normal distribution and if we need to transform it.</p>
+                    
+                    <img src="projects/6mathscore/mathplot.png" style="width:100%">
+ 
+                    <h5>Regression Modeling</h5>
+                    <p>The 9-regressor model can explain 27.45% of the math score. That means even if one may have previous failures and are getting all the help or one is simply a girl, there are still a lot of other factors that can help with bumping up math score.</p>
+                    
+                    <p>How do we decide on how many and which regressors to choose to build the model? We use stepwise Forward and Backward selection and rely on statistical model selection metrics to measure at what point the model is overfitting.</p>
+                    
+                    <img src="projects/6mathscore/stepwise_result.png" style="width:100%">
+                    
+                    <div class="horizontal">
+                        <div class="vertical2-3">           
+                            <img src="projects/6mathscore/modelselection.png" style="width:100%">
+                        </div>
+                        <div class="vertical1-3">
+                            <img src="projects/6mathscore/BICplot.png" style="width:100%">
+                        </div>
+                    </div>
+                    
+                    <p>R-square or Adjusted R-square going up means more percentage of the outcome can be explained by the variables included in the model. AIC, SBIC, Cp going down means lower information loss with that model. At some point, both upward and downward curves are tapering off toward horizontal, which indicates the benefits of including more variables are diminishing and it is time to stop there.SBC zigzag upward because this metric penalizes heavier on the including of more variables. It comes down to a trade-off of how much you want to explain versus how many regressors you include in the model.</p>
+                    
+                    <h5>Math Equations</h5>
+                    
+                    <p>The beauty of statistics is that it is the child of math and data. Math abstracts and simplifies and boils things down to a few symbols and relations among them. Data is messy, unruly and in our time gigantic, with outliers, confounders, and multicollinearities. Statisticians often seek the fine balance between these two forces: theory and reality, clarity and complexity, parsimony and delicacy.</p>
+                    
+                    <p>Below I want to collect the abbreviated model selection metrics and starry concepts formulated by generations of mathematicians or statisticians to help define that fine balance.</p>
+                    
+                    <img src="projects/6mathscore/adjRsq.png" style="width:60%">
+                    
+                    <p>R-squared: regression explained reality. <br>Adjusted R-squared: the complement to unexplained residual-reigned reality, with a twist to adjust for the degree of freedom, taking the number of regressors into account.</p>
+                    <p>n is the number of observations. k is the number of predictors or regressors. In below formulas, p is used as predictor symbol. </p>
+                    
+                    <img src="projects/6mathscore/RMSE.png" style="width:60%">
+                    
+                    <p>RMSE: Root Mean Square Error, measuring how far off the predicted stays from the reality.</p>
+                    <p>x_i is the data point from reality. x_i-hat is the predicted value. </p>
+                    
+                    <img src="projects/6mathscore/AIC.png" style="width:60%">
+                    <p>AIC: Akaike Information Criterion, measuring the information loss.</p>
+                    <p>RSS is Residual Sum of Squares, which again measures how far off prediction from reality, in the second degree. </p>
+                    
+                    <img src="projects/6mathscore/BIC.png" style="width:60%">
+                    <p>BIC: Bayes Information Criterion. In R, it was called SBC. It also measures the information loss, but with log(n) which penalizes heavier on complexity than AIC, which has a constant 2 in front of the predictor value.</p>
+                    
+                    <img src="projects/6mathscore/SBIC.png" style="width:60%">
+                    <p>SBIC: Sawa's Bayesian Information Criterion</p>
+                    <p>SSE: Sum of Squared Errors is the same as RSS on AIC formula or spelled as SSR. It also measures the information loss with complexity penalty.</p>
+                    
+                    <img src="projects/6mathscore/Cp.png" style="width:60%">
+                    <p>Cp or C(p) is mallow's Cp. Same intention, different conception.</p>
+                    
+         
+
+                    
+                </div>
+            </div>
             
            <footer class="footer">
                 <div class="row">

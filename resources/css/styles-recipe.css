@@ -188,14 +188,15 @@ Project
 -------------------------*/
 
 .project-demo{
-    position: relative;
-    top: 10px;
-    width: 60em;
+    position: absolute;
+    top: 70px;
+    width: 48em;
+    left: 30px;
     min-height: 100vh;
 }
 
 .highlights{
-    margin: 0px 10px;
+    margin: 50px 10px;
     padding:0px;
 }
 
@@ -224,8 +225,8 @@ Project
 
 
 .project-details{
-    margin: 5px 10px;
-    padding:10px 60px;
+    margin: 20px 40px 20px 10px;
+    padding:10px 40px;
 }
 
 
