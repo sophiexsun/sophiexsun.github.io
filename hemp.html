@@ -146,12 +146,12 @@
             <div class ="col span-3-of-4">
                 <div class="project-details">
                     <h2>Cannabis Consumption Prediction</h2>
-                    <p>Psychographic traits such as Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness, Impulsivity, Sensation-seeking are analyzed along with demographic traits and finalized model with accuracy rate at 66.8%. Along the way, we mapped out the psychographic profiling of Europe and North America.</p>
+                    <p>Psychographic traits such as Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness, Impulsivity, and Sensation-seeking are analyzed along with demographic traits and finalized model with accuracy rate at 66.8%. Along the way, we mapped out the psychographic profiling of Europe and North America.</p>
                     
                     <h5>Findings</h5>
-                    <p>Frequent marijuana users tend to have below traits:<br>&ofcir;&nbsp;&nbsp;Demographic: age 18-24, male, lives in North America and had &nbsp;&nbsp;&nbsp;&nbsp;some college <br>&ofcir;&nbsp;&nbsp;Psychographic: highly impulsive, more sensation-seeking, more &nbsp;&nbsp;&nbsp;&nbsp;open to try new things and less conscientious (disciplined)</p>
+                    <p>Frequent marijuana users tend to have the following traits:<br>&ofcir;&nbsp;&nbsp;Demographic: age 18-24, male, lives in North America and &nbsp;&nbsp;&nbsp;&nbsp; had some college <br>&ofcir;&nbsp;&nbsp;Psychographic: highly impulsive, more sensation-seeking, &nbsp;&nbsp;&nbsp;&nbsp;more open to try new things and less conscientious &nbsp;&nbsp;&nbsp;&nbsp;(disciplined)</p>
                     
-                    <p>Below correlation chart is to check in one frame all the traits on a matrix if there’s collinearity among traits, each train’s distribution and skewness. We do see positive correlation between openness and impulsivity and sensation seeking and a negative correlation between agreeableness and impulsivity and sensation seeking. For this project purpose, we kept them.</p>
+                    <p>The correlation chart below is to check in one frame all the traits on a matrix if there’s collinearity among traits, each train’s distribution and skewness. We do see positive correlation between openness and impulsivity and sensation seeking and a negative correlation between agreeableness and impulsivity and sensation seeking. For this project purpose, we kept them.</p>
                     <img src="projects/5hemp/correlation.png" style="width:100%">
                     
                     <p>People in Europe are more conscientious and less sensation-seeking than people in North America.</p>
@@ -167,15 +167,15 @@
                     <h5>Modeling</h5>
                     <img src="projects/5hemp/4models.png" style="width:100%">
                     
-                    <p>&ofcir;&nbsp;&nbsp;Model 1, we looked at the demographic traits only.<br>&ofcir;&nbsp;&nbsp;Model 2, we added positive psychographic traits.<br>&ofcir;&nbsp;&nbsp;Model 3, we added negative psychographic traits.<br> &ofcir;&nbsp;&nbsp;Model 4, we added interaction factor between continent and &nbsp;&nbsp;&nbsp;&nbsp;sensation seeking trait.</p>
+                    <p>&ofcir;&nbsp;&nbsp;Model 1, we looked at the demographic traits only.<br>&ofcir;&nbsp;&nbsp;Model 2, we added positive psychographic traits.<br>&ofcir;&nbsp;&nbsp;Model 3, we added negative psychographic traits.<br> &ofcir;&nbsp;&nbsp;Model 4, we added interaction factor between continent &nbsp;&nbsp;&nbsp;&nbsp;and sensation seeking traits.</p>
 
                     <p>Here's how the factors are groupped and mapped out as numerical or categorical.</p>
                     <img src="projects/5hemp/factor_type_grouping.png" style="width:100%">
                     
                   
-                    <p>Interaction of Europe or North America living and the sensation seeking trait is shown on below chart. In North America, more recent marijuana users are higher sensation seeking. In Europe, sensation seeking is not a strong indicator of marijuana using. </p>
+                    <p>Interaction of Europe or North America living and the sensation seeking trait is shown on below chart. In North America, more recent marijuana users are higher sensation seeking. In Europe, sensation seeking is not a strong indicator of marijuana use. </p>
                     <img src="projects/5hemp/effectplot.png" style="width:100%">
-                    <p>After checking on the skewness of psychographic traits, we ran a comparison of five common transformations and decide to stay with power=1, which is keeping its original form. </p>
+                    <p>After checking on the skewness of psychographic traits, we ran a comparison of five common transformations and decided to stay with power=1, which is keeping its original form. </p>
                     <img src="projects/5hemp/symbox.png" style="width:100%">
                     
                 </div>

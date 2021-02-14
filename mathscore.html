@@ -145,20 +145,20 @@
             </div>
             <div class ="col span-3-of-4">
                 <div class="project-details">
-                    <h2>What Land You <br>A High Math Score?</h2>
-                    <p>Math performance in school  is a result of the push-pull of many factors at play. In this group project, we used stepwise regression to filter out insignificant factors and came down to below formula to dissect the factors that explain the math score. While performing model selection, we used AIC and BIC to detect any overfitting.</p>
+                    <h2>What Lands You <br>A High Math Score?</h2>
+                    <p>Math performance in school  is a result of the push-pull of many factors at play. In this group project, we used stepwise regression to filter out insignificant factors and came down to the formulas shown below to dissect the factors that explain the math score. While performing model selection, we used AIC and BIC to detect any overfitting.</p>
                     
                     <h5>Findings</h5>
                     <p>Math score ~ previous failure + mother’s job + log(absences+1) + going out frequency + gender + amount of free time + amount of study time + having family educational support + having extra educational support</p>
                     
                     <h4>The pulling-down factors</h4>
-                    <p>Previous performance is a strong predictor of future poor performance at math. Having family educational support or having extra educational support such as tutoring are also an indicator that the students need extra help and in the short run they may still have poor math score. Going out 3 times a week and more free time (non-study time) are related to lower math scores </p>
+                    <p>Previous poor performance is a strong predictor of future performance at math. Having family educational support or having extra educational support such as tutoring are also an indicator that the students need extra help and in the short run they may still have poor math scores. Going out 3 times a week and more free time (non-study time) are related to lower math scores </p>
                     <h4>The pushing-up factors</h4>
-                    <p>More study time helps. Being a boy helps! Absence was transformed into log, because it is heavily skewed to 0 absence and only very few students have some absence. Log of absence actually has a positive coefficient to math score. Mother’s profession if in health is a big push to math score and civil service help too. But if mother is a teacher, it is negative to the math score. </p>
+                    <p>More study time helps. Being a boy helps! Absence was transformed into log, because it is heavily skewed when the majority of students have 0 absences and only very few students have any absences. Log of absence actually actually has a positive coefficient to math scores. Mother’s profession, if in health, is a big push to math scores and civil service helps too. But if mother is a teacher, it is negative to the math score. </p>
                     
                     <img src="projects/6mathscore/gender_math.png" style="width:100%">
                     
-                    <p>Below is distribution views of math score to check if this is a normal distribution and if we need to transform it.</p>
+                    <p>Below are distribution views of math score to check if this is a normal distribution and if we need to transform it.</p>
                     
                     <img src="projects/6mathscore/mathplot.png" style="width:100%">
  
@@ -178,17 +178,17 @@
                         </div>
                     </div>
                     
-                    <p>R-square or Adjusted R-square going up means more percentage of the outcome can be explained by the variables included in the model. AIC, SBIC, Cp going down means lower information loss with that model. At some point, both upward and downward curves are tapering off toward horizontal, which indicates the benefits of including more variables are diminishing and it is time to stop there.SBC zigzag upward because this metric penalizes heavier on the including of more variables. It comes down to a trade-off of how much you want to explain versus how many regressors you include in the model.</p>
+                    <p>R-square or Adjusted R-square going up means more percentage of the outcome can be explained by the variables included in the model. AIC, SBIC, Cp going down means lower information loss with that model. At some point, both upward and downward curves are tapering off toward horizontal, which indicates the benefits of including more variables are diminishing and it is time to stop there. SBC zigzags upward because this metric penalizes heavier on the including of more variables. It comes down to a trade-off of how much you want to explain versus how many regressors you include in the model.</p>
                     
                     <h5>Math Equations</h5>
                     
-                    <p>The beauty of statistics is that it is the child of math and data. Math abstracts and simplifies and boils things down to a few symbols and relations among them. Data is messy, unruly and in our time gigantic, with outliers, confounders, and multicollinearities. Statisticians often seek the fine balance between these two forces: theory and reality, clarity and complexity, parsimony and delicacy.</p>
+                    <p>The beauty of statistics is that it is the child of math and data. Math abstracts, simplifies and boils things down to a few symbols and relations among them. Data is messy, unruly and in our time gigantic, with outliers, confounders, and multicollinearities. Statisticians often seek the fine balance between two forces: Theory and reality, clarity and complexity, parsimony and delicacy.</p>
                     
-                    <p>Below I want to collect the abbreviated model selection metrics and starry concepts formulated by generations of mathematicians or statisticians to help define that fine balance.</p>
+                    <p>Below I want to show the abbreviated model selection metrics and starry concepts formulated by generations of mathematicians or statisticians to help define that fine balance.</p>
                     
                     <img src="projects/6mathscore/adjRsq.png" style="width:60%">
                     
-                    <p>R-squared: regression explained reality. <br>Adjusted R-squared: the complement to unexplained residual-reigned reality, with a twist to adjust for the degree of freedom, taking the number of regressors into account.</p>
+                    <p>R-squared: regression explained reality. <br><br>Adjusted R-squared: the complement to unexplained residual-reigned reality, with a twist to adjust for the degree of freedom, taking the number of regressors into account.</p>
                     <p>n is the number of observations. k is the number of predictors or regressors. In below formulas, p is used as predictor symbol. </p>
                     
                     <img src="projects/6mathscore/RMSE.png" style="width:60%">
