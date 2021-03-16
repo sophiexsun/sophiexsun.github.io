@@ -39,7 +39,7 @@
                         <h3>Consumer Studies</h3>
                         
                         <div class="sidebar">
-                            <a href="/projects.html" class="project-photo">
+                            <a href="projects.html" class="project-photo">
                                 <div class="col span-1-of-4">
                                     <img src="vendors/images/cookie.jpg" alt="finding_perfect_chocolate_chip_cookie" style="width:100%">
                                 </div>
@@ -141,65 +141,75 @@
             <div class ="col span-1-of-4">
                 <div class="highlights">
                     <h5>Year</h5>
-                    <p>2020</p>
+                    <p>2021</p>
                     <h5>Scope</h5>
-                    <p>biostats of 2000+ adults <br> living in California<br>in 2018 Health Survey</p>
+                    <p>6533 songs <br>archived on<br><a href="https://lyricsondemand.com/tophits/" target="_blank" rel="noreferrer noopener">lyricsondemand</a></p>
                     <h5>Variables</h5>
-                    <p>height <br>weight<br>gender</p>
+                    <p>2 sentiment dimensions<br>arousal<br>valance</p>
                     <h5>Observations</h5>
-                    <p>21177</p>
+                    <p>6403 songs <br>4843 love songs<br>1,325,550 tokens</p>
                     <h5>Script</h5>
-                    <p>Python<br>sklearn</p>
+                    <p>R<br>tidytext<br>quanteda<br>stringr<br>dplyr<br>wordcloud2<br>ggplot2<br>topicmodels</p>
                     <h5>Method</h5>
-                    <p>Linear Regresssion<br>Random Forest</p>
+                    <p>Latent Dirichlet Allocation</p>
                 </div>
             
             </div>
             <div class ="col span-3-of-4">
                 <div class="project-details">
-                    <h2>Shirt Size Ratio <br>For CA consumers</h2>
-                    <p>The right size ratio of inventory that matches market needs is critical in inventory control. Currently most businesses still make size ratio decisions based on limited data from previous sales seasons, product categories, and regions, resulting in overstock in some sizes and under-stock in other sizes. Buyers tend to make a “safe bet” on the middle size and let the fringe sizes run out first. The market is also evolving in size, due to changes in lifestyle and migration. In this project, I married the latest health survey data to industry size categorization (size chart you see when you buy clothing online) and map out the size ratio for the population of California residents, as sampled in this survey.</p>
-                    <h5>Findings</h5>
-                    <p>The size M for both female and male consumers is about 40%. So buyers do get their instinct right, to stock up mostly on M. But then the nuances of size distribution kick in. For men, S and L are equally second tier, close 30% each. XL is actually only 2.3%. Female sizing are more dispersed: S and L take about 22%, but XS and XL are 5-6%, XXL 3.4% and XXS is only 1.3%. With this general population based size ratio, buyers can tune up purchase plans to better reflect. A next step would be to increase the granularity to drill down to size ratio per county, per age, and per other demographic factors.</p>
-                    <img src="projects/2shirtsize/sizeratio.png" alt="CA-shirt-size-ratio" style="width:100%">
-                    <h5>Exploratory Analysis</h5>
-                    <p>How tall are the adult men and women living in California? Below is a graph which gives a quick view to describe the density of population in a certain weight and height combination on the grid. The darker the color, the more people fall into that category. We can see the blue “center of the storm” for men is at 5’9” (1.8 meter) and 190 lbs (86 kilogram) and the red cloud for women is (1.6 meter) and 157 lbs (71 kilogram).</p>
-                    <img src="projects/2shirtsize/densityplot.png" alt="height-weight-density-by-gender-ca" style="width:80%">
-
+                    <h2>Romance Thermometer: <br>Lyrics Analysis Over <br>Nine Decades</h2>
+                    <p>Lyrics, as cultural and commercial products, are a gateway to study human emotions. This paper examined the expressions about romantic relationships in the pop song lyrics and discovered the trend of how artists tell their love stories over nine decades, from 1946 to 2021. The pandemic year stood out as an outlier in that both “love” and f-word spiked. Several distinctive trends were weaving through decades: the sentiment of the love songs are getting less positive, the word “I” are trending up, the top bigram has been staying with “yeah yeah” since 1980s and the complexity have been sliding down. </p>
                     
-                    <p>Overweight is alarmingly common across all age  and gender groups. From the plots below, we can see BMI categorized overweight in different age groups and gender groups sampled in this survey.</p>
+                    <h5>Findings</h5>
+                    <p>The linguistic complexity is dropping down over nine decades; the intensity of emotional expression is decreasing; the emotions in love songs are growing less positive.</p>
+                    
+                    <h5>Topic Modeling</h5>
+                    <p>Latent Dirichlet Allocation topic modeling effectively separated out Love Songs from non-love songs. Love songs take about three quarters of all songs. Below is a year by year distribution of song counts, with love songs on top over non-love songs. </p>
+                    <img src="projects/7romance/LoveSongRatio.png" style="width:100%">
+                    
+                    <p>By looking at the strongest difference in word use in the two topics by the log ratio, we can see clearly that topic one is love song, with words such as “baby”, “want”, “you”, “love” and “heart” and the sense of longing in “away” and “without”. The topic two exhibits a lot of rap song typical words, such as explicit (e.g. “bitch”, “nigga”, "shit") and colloquial (e.g. “em” and “yo”) words.</p>
+                    <img src="projects/7romance/LogRatio.png" style="width:100%">
+                    
+                    <h5>Complexity Study</h5>
+                    <p>The lexical diversity measured by type-token ratio (TTR) dropped significantly from 1940s to 1950s and slowly trended downward all the way till 2020. We see a spike in 2021. It would be great to look back at 2021 next year when there is a full archive of the pop songs for this year. </p>
+                    <img src="projects/7romance/LexicalDiversity.png" style="width:100%">
+                    
+                    <p>The word length dropped in two steep slopes from 1940s to 1980s and then from 1990s to 2020s. The stopwords (or style words such as pronouns, articles, propositions) are included in the word length study. That lowered the average word length to below 4 letters throughout the time frame in the study.</p>
+                    <img src="projects/7romance/wordlength.png" style="width:100%">
+                    
+                    <h5>Sentiment Analysis</h5>
+                    <p>The “Romance Thermometer” is quantifiable emotional expression measurements in two dimensions: arousal and valance, based on Russell’s Model. </p>
+                    
+                    <p>The gold-fish-esque image has its body as positive and tail negative. We can see the tail gets more dense over decades, meaning that the sentiment in love songs is getting less positive. The gold fish floated at the same stratification, meaning the arousal level did not change much decade over decade. </p>
+                    <img src="projects/7romance/RThermo.png" style="width:100%">
+                    
+                    <h5>Frequent Words</h5>
+                    <p>The word “love” (or “loved”, “lovin”) are examined in year over year occurrence count among the 4843 love songs. An almost perfect sine wave pattern emerged on the graph, from 1946 to 2021. The use of word “love” peaked in the late 1960s to 70s and tanked during the 2010s. It’s uplifting to see that in spite of difficult years in 2020 and 2021, the word “love” is trending up.</p>
+                    <img src="projects/7romance/lovesinewave.png" style="width:100%">
+                    
+                    <p>Pronouns are very telling of emotions. More “I” implies the intensity of emotional pain increases if in a negative song context and the attention assignment toward oneself. “I” trends upward in recent decades, while “you” is dropping. “We”, “she”, and “he” are all lying low consistently in love songs, in comparison to “I” and “you”.</p>
+                    <img src="projects/7romance/pronouns.png" style="width:100%">
+                    
+                    <p>Bigrams in songs are often non-meaning beat-filling words, repeated and one syllable per beat. Here we look at the top bigram from each decade and notice that ever since the 1980s, the bigram "yeah yeah" has stayed on top of the chart as the favorite beat filler of songwriters.</p>
+                    <img src="projects/7romance/bigram.png" style="width:50%">
+                    
+                    <p>The top words for all decades in the "happy" love songs and "sad" love songs categories are shown in the word clouds below. "Lonely" and "alone" stand out in the sad songs, while "love" and "baby" stand out in the happy ones. The word "love" occurred 15820 times, far outnumbered the other positive words, which occurred mostly below 1000 times. The distribution of the sad song words are more even.</p>
                     <div class="horizontal">
                         <div class="vertical">
-                            <img src="projects/2shirtsize/stacked.png" alt="overweight-ratio-by-age-ca" style="width:100%" display="inline-block">
+                            <img src="projects/7romance/brokenheartwords.png" style="width:100%" display="inline-block">
                         </div>
                         <div class="vertical">
-                             <img src="projects/2shirtsize/overweightingender.png" alt="overweight-ratio-by-gender-ca" style="width:100%" display="inline-block">
+                             <img src="projects/7romance/lovesongtopwords.png" style="width:100%" display="inline-block">
                         </div>
                     </div>
-
-                    
-                    <h5>Random Forest</h5>
-                    <p>Steps</p>
-                    <p>&ofcir;&nbsp;&nbsp;Remove any off-chart sizing <br>&ofcir;&nbsp;&nbsp;Set up Training and Test data with <br>&nbsp;&nbsp;&nbsp;&nbsp;sklearn RandomForestClassifier()<br>&ofcir;&nbsp;&nbsp;Define predictors and outcome variables<br> &ofcir;&nbsp;&nbsp;Build Random Forest <br>&nbsp;&nbsp;&nbsp;&nbsp;and select the optimal number of trees<br> &ofcir;&nbsp;&nbsp;Evaluate results</p>
-
-                    <p>Confusion Matrix for Women</p>
-                    <img src="projects/2shirtsize/ConfusionMatrix_w.png" alt="confusion-matrix" style="width:80%">
-                    
-                    <p>Random Forest outperformed Linear Regression</p>
-                    <img src="projects/2shirtsize/F-1score.png" alt="F-1-score" style="width:80%">
-                    
-                    <p>Below distribution chart shows the prototype of size distribution for men and women with available health survey data and sizing chart online. However, 10% of women and 14% of men have their sizes off-chart. My prediction model can solve this off-chart problem by providing predicted size values to complete the size distribution.</p>
-                    <img src="projects/2shirtsize/distribution.png" alt="size-distribution" style="width:80%">
-                    
-                    <p>For more details of this project, you can find my project <a href="/projects/2shirtsize/shirtsize_presentation.html" target="_blank" rel="noreferrer noopener">presentation</a> and <a href="sizecode.html">code</a> for bucketing size per height and weight input.</p>
+                    <p>If you are interested in finding out more trends discovered, please check out the project <a href="/projects/7romance/thermometer.pdf" target="_blank" rel="noreferrer noopener">presentation</a>.</p>
                 </div>
             </div>
-            
-           
+                    
             
         </section>
-        
-       <footer class="footer">
+            
+           <footer class="footer">
                 <div class="row">
                     <div class ="col span-1-of-2">
                         <ul class="footer-nav">
@@ -221,8 +231,6 @@
                 <div class="row">
                     <p> &copy; 2021 by Sophie X Sun. All Rights Reserved. </p>
                 </div>
-            </footer> 
-             
-        
+            </footer>         
     </body>
 </html>
