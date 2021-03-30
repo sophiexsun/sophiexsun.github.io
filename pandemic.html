@@ -94,7 +94,7 @@
                             </a>
                         </div>
                         
-                         <div class="sidebar">
+                        <div class="sidebar">
                             <a href="covid.html" class="project-photo">
                                 <div class="col span-1-of-4">
                                     <img src="vendors/images/covid.jpg" alt="evaluating_covid_vaccine_acceptance_factors" style="width:100%">
@@ -155,69 +155,64 @@
                     <h5>Year</h5>
                     <p>2021</p>
                     <h5>Scope</h5>
-                    <p>6533 songs <br>archived on<br><a href="https://lyricsondemand.com/tophits/" target="_blank" rel="noreferrer noopener">lyricsondemand</a></p>
+                    <p>US and world <br>COVID-19 records <br>published on <a href="https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Sex-Age-and-S/9bhg-hcku/data" target="_blank" rel="noreferrer noopener">CDC</a> <br>and <a href="https://ourworldindata.org/coronavirus-source-data" target="_blank" rel="noreferrer noopener">Our World in Data</a></p>
                     <h5>Variables</h5>
-                    <p>2 sentiment dimensions<br>arousal<br>valance</p>
+                    <p>OWD Dataset<br>date<br>continent<br>new cases<br>new deaths<br>new deaths per million<br>new vaccinations<br>population</p>
+                    <p>CDC Dataset<br>week<br>age group<br>sex<br>COVID-19 deaths<br>population</p>
                     <h5>Observations</h5>
-                    <p>6403 songs <br>4843 love songs<br>1,325,550 tokens</p>
-                    <h5>Script</h5>
-                    <p>R<br>tidytext<br>quanteda<br>stringr<br>dplyr<br>wordcloud2<br>ggplot2<br>topicmodels</p>
+                    <p>75,994 daily records<br>of six continents<br>1/22/2020 to 3/23/2021</p>
+                    <p>1408 weekly records<br>of the United States<br>12/29/2019 to 3/14/2021</p>
+
+                    <h5>Tool</h5>
+                    <p>Tableau</p>
                     <h5>Method</h5>
-                    <p>Latent Dirichlet Allocation</p>
+                    <p>K-means Clustering</p>
                 </div>
             
             </div>
             <div class ="col span-3-of-4">
                 <div class="project-details">
-                    <h2>Romance Thermometer: <br>Lyrics Analysis Over <br>Nine Decades</h2>
-                    <p>Lyrics, as cultural and commercial products, are a gateway to study human emotions. This paper examined the expressions about romantic relationships in the pop song lyrics and discovered the trend of how artists tell their love stories over nine decades, from 1946 to 2021. The pandemic year stood out as an outlier in that both “love” and f-word spiked. Several distinctive trends were weaving through decades: the sentiment of the love songs are getting less positive, the word “I” are trending up, the top bigram has been staying with “yeah yeah” since 1980s and the complexity have been sliding down. </p>
+                    <h2>Covid-19 Pandemic: <br>A Saga Told By Data </h2>
+                    <p>As we passed one-year anniversary of the onset of the global pandemic that disrupted the cadence of our routine life, affected livelihood for so many, and caused deaths of over 2.7 million people (up to 3/23/21), a look at the data collected over the past year can give us a sense of the impact that it made on a global year-long scale.</p>
                     
-                    <h5>Findings</h5>
-                    <p>The linguistic complexity is dropping down over nine decades; the intensity of emotional expression is decreasing; the emotions in love songs are growing less positive.</p>
+                    <h5>The Curves</h5>
+                    <img src="projects/8pandemic/all_cont_case.png" style="width:100%">
+                    <p>This is the landscape of how the pandemic spread throughout the world in the past year, after stay-home orders were issued nation after nation to bend the curve. Waves after waves, peaks after peaks, continent after continent, the virus grew rampant during the winter, showing exponential curves in Europe and North America. The highest peak on a single continent was recorded at over 2 million new cases in one week in Europe by November 1st, 2020 as the end of the week.</p>
                     
-                    <h5>Topic Modeling</h5>
-                    <p>Latent Dirichlet Allocation topic modeling effectively separated out Love Songs from non-love songs. Love songs take about three quarters of all songs. Below is a year by year distribution of song counts, with love songs on top over non-love songs. </p>
-                    <img src="projects/7romance/LoveSongRatio.png" style="width:100%">
+                    <h5>The Darkest Moment</h5>
+                    <img src="projects/8pandemic/all_cont_death.png" style="width:100%">
+                    <p>The deadliest week ended on January 24th, 2021, with close to a hundred thousand deaths in one week.</p>
+ 
+                    <h5>The Race Against Virus</h5>
+                    <img src="projects/8pandemic/all_continents.png" style="width:100%">
+                    <p>With all the science and technology advances collectively possessed among the institutions around the world, multiple vaccines were developed simaltaenously by the pharmaceautical companies and research groups around the clock to save lives against the velocity of the virus. It is truly a race between the human race and the virus. By the 2020 Christmas, the first vaccines were administered and from January, we saw the bending of the curves.</p>
                     
-                    <p>By looking at the strongest difference in word use in the two topics by the log ratio, we can see clearly that topic one is love song, with words such as “baby”, “want”, “you”, “love” and “heart” and the sense of longing in “away” and “without”. The topic two exhibits a lot of rap song typical words, such as explicit (e.g. “bitch”, “nigga”, "shit") and colloquial (e.g. “em” and “yo”) words.</p>
-                    <img src="projects/7romance/LogRatio.png" style="width:100%">
+                    <img src="projects/8pandemic/all_continents_NA.png" style="width:100%">
+                    <p>Zoom in to North America. The turning point of the war on the virus fell on January 10, 2021 week, with approximately 2-million new cases in a week and approaching 600-thousand total deaths and over 1 million daily vaccinations ramped up from January 13, 2021. On that day, the vaccines over cases exceeds 4 times. </p>
                     
-                    <h5>Complexity Study</h5>
-                    <p>The lexical diversity measured by type-token ratio (TTR) dropped significantly from 1940s to 1950s and slowly trended downward all the way till 2020. We see a spike in 2021. It would be great to look back at 2021 next year when there is a full archive of the pop songs for this year. </p>
-                    <img src="projects/7romance/LexicalDiversity.png" style="width:100%">
+                    <h5>The Age Factor</h5>
+                    <img src="projects/8pandemic/age_ratio.png" style="width:100%">
+                    <p>Age is the biggest factor in COVID-19 death. This treemap gives a spatial sense of the death counts by age group up till the March 23rd, 2021 week. The older age group, the more casualty from COVID-19. </p>
+                    <img src="projects/8pandemic/age_gap.png" style="width:100%">
+                    <p>When normalized by death rate per million people, the COVID-19 impact on the older age group, especially those above 85 years old, is even more stark compared with younger groups.</p>
                     
-                    <p>The word length dropped in two steep slopes from 1940s to 1980s and then from 1990s to 2020s. The stopwords (or style words such as pronouns, articles, propositions) are included in the word length study. That lowered the average word length to below 4 letters throughout the time frame in the study.</p>
-                    <img src="projects/7romance/wordlength.png" style="width:100%">
                     
-                    <h5>Sentiment Analysis</h5>
-                    <p>The “Romance Thermometer” is quantifiable emotional expression measurements in two dimensions: arousal and valance, based on Russell’s Model. </p>
+                    <h5>The Gender Gap</h5>
+                    <img src="projects/8pandemic/gender_gap.png"  style="width:100%">
+                    <p>Somehow, COVID-19 proved to be more deadly on men than on women. Throughout the curves of the pandemic, men were dying at higher rate than women.</p>
                     
-                    <p>The gold-fish-esque image has its body as positive and tail negative. We can see the tail gets more dense over decades, meaning that the sentiment in love songs is getting less positive. The gold fish floated at the same stratification, meaning the arousal level did not change much decade over decade. </p>
-                    <img src="projects/7romance/RThermo.png" style="width:100%">
+                    <img src="projects/8pandemic/risk_bar.png"  style="width:100%">
+                    <p>COVID-19 death risk stack view across age and gender shows the distribution of an exponential risk increase in proportion to age. Newborns have similar risk as the 45-54 age group. </p>
                     
-                    <h5>Frequent Words</h5>
-                    <p>The word “love” (or “loved”, “lovin”) are examined in year over year occurrence count among the 4843 love songs. An almost perfect sine wave pattern emerged on the graph, from 1946 to 2021. The use of word “love” peaked in the late 1960s to 70s and tanked during the 2010s. It’s uplifting to see that in spite of difficult years in 2020 and 2021, the word “love” is trending up.</p>
-                    <img src="projects/7romance/lovesinewave.png" style="width:100%">
+                    <h5>COVID-19 is More Deadly Than The Flu</h5>
+                    <img src="projects/8pandemic/risk_by_age_gender.png"  style="width:100%">
+                    <p>Even if the clutering of Tableau's embedded K-means method separated out the 85 year old and above from the rest of the age group, we can still see the fatal impact of COVID-19 by comparing it to the benchmark of 2018-2019 influenza for age group 65+ at 8 deaths per million. It is the same as the COVID-19 death rate for the 15-24 age group. That means for any age group with higher COVID-19 death rate than that, it is better to think again if the risk for you is comparable to that of a bad flu.</p>
                     
-                    <p>Pronouns are very telling of emotions. More “I” implies the intensity of emotional pain increases if in a negative song context and the attention assignment toward oneself. “I” trends upward in recent decades, while “you” is dropping. “We”, “she”, and “he” are all lying low consistently in love songs, in comparison to “I” and “you”.</p>
-                    <img src="projects/7romance/pronouns.png" style="width:100%">
+
                     
-                    <p>Bigrams in songs are often non-meaning beat-filling words, repeated and one syllable per beat. Here we look at the top bigram from each decade and notice that ever since the 1980s, the bigram "yeah yeah" has stayed on top of the chart as the favorite beat filler of songwriters.</p>
-                    <img src="projects/7romance/bigram.png" style="width:50%">
-                    
-                    <p>The top words for all decades in the "happy" love songs and "sad" love songs categories are shown in the word clouds below. "Lonely" and "alone" stand out in the sad songs, while "love" and "baby" stand out in the happy ones. The word "love" occurred 15820 times, far outnumbered the other positive words, which occurred mostly below 1000 times. The distribution of the sad song words are more even.</p>
-                    <div class="horizontal">
-                        <div class="vertical">
-                            <img src="projects/7romance/brokenheartwords.png" style="width:100%" display="inline-block">
-                        </div>
-                        <div class="vertical">
-                             <img src="projects/7romance/lovesongtopwords.png" style="width:100%" display="inline-block">
-                        </div>
-                    </div>
                 </div>
             </div>
                     
-            
         </section>
             
            <footer class="footer">
@@ -242,6 +237,7 @@
                 <div class="row">
                     <p> &copy; 2021 by Sophie X Sun. All Rights Reserved. </p>
                 </div>
-            </footer>         
+            </footer> 
+        
     </body>
 </html>
