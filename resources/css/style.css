@@ -272,7 +272,7 @@ PATH
 
 .path-text{
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     width:100%;
     color: #553b2f;
     padding-left: 10px;
@@ -299,7 +299,7 @@ PATH
     height: auto;
     border-radius: 50%;
     opacity: 1;
-    filter:brightness(80%);
+    filter:brightness(73%);
 }
 
 
