@@ -34,7 +34,7 @@
         
         <!---sidebar -->
         <div id="menu">
-                  <div class="nav vertical-1-of-2">
+                <div class="nav vertical-1-of-2">
                     <div class="consumerstudies">
                         <h3>Consumer Studies</h3>
                         
@@ -166,44 +166,71 @@
             <div class ="col span-1-of-4">
                 <div class="highlights">
                     <h5>Year</h5>
-                    <p>2008</p>
+                    <p>2021</p>
                     <h5>Scope</h5>
-                    <p>12 scarves<br>with or without scent<br>scored 1-10 by 120 adults</p>
+                    <p>1000+ Amazon ASINs <br>70K+ review documents<br>scraped in July 2021</p>
                     <h5>Variables</h5>
-                    <p>Tactile<br>Olfactory<br>Visual preferences</p>
+                    <p>product aspects<br>sentiments</p>
                     <h5>Observations</h5>
-                    <p>120 female consumers<br>3 ethnic groups: <br>Caucasians<br>Hawaiians<br>Chinese</p>
+                    <p>~400K text units</p>
                     <h5>Script</h5>
-                    <p>Fortran <br>(by a science student)</p>
+                    <p>R<br>Python<br>RSelenium<br>PyTorch<br>Huggingface<br>Nympy<br>sklearn</p>
                     <h5>Method</h5>
-                    <p>Multilinear Regression<br>ANOVA</p>
+                    <p>BERT<br>Snippext</p>
                 </div>
             
             </div>
             <div class ="col span-3-of-4">
                 <div class="project-details">
-                    <h2>Scented Textile<br>a turn-on or turn-off?</h2>
-                    <p>When scented textiles became technologically viable, we wanted to see if scent is a marketable product attribute. How would consumers respond to scent? Would they respond to it differently depending on whether they grew up with scent? At the time, I spent a few years in Hawaii and I noticed the tropical floral scents were commonly used as body scent by the locals. As a Chinese, I didn’t have much scent consumption in the past. Funded by Summer Undergraduate Research Award, I designed the experiment and collected data from 120 individuals aged from 20 to 40, from three ethnic groups, all women.</p>
-                    <h5>Findings</h5>
-                    <p>Consumers of different cultures indeed weigh olfactory and tactile senses differently. Hawaiians are most influenced by scent. Chinese care most about texture and touch. Caucasians are in the middle and more responsive to visuals. Only Hawaiians are more likely to choose a scented textile over unscented. Marketers need to conduct thorough sense-specific research and “localize” product features to appeal to specific markets.</p>
- 
-                    <h5>Design</h5>
-                    <p>12 scents: rose, honeysuckle, sandalwood, gardenia, lemongrass, lavender, YSL, musk, plumeria, white ginger, cinnamon, green tea. 12 polyester scarfs in varied colors, patterns, textures. One set of scarves are unscented. The second set scarves are scented and put in glass jars with sealed lids.</p>
+                    <h2>What is an ideal mask?</h2>
+                    <p>It is not that easy to answer. Even for a simple product like a face mask, it has multiple dimensions to be thoroughly articulated by individual users. SweetSpotter, a Machine Learning-powered NLP (Natural Language Processing) pipeline, was built to answer exactly that question after sifting through 70K+ reviews on Amazon.</p>
                     
-                    <p>Steps</p>
-                    <p>&ofcir;&nbsp;&nbsp;Test 1: Smell the aroma in each of the scented scarves jar.<br>&ofcir;&nbsp;&nbsp;Test 2: Look and touch the unscented scarves and score &nbsp;&nbsp;&nbsp;&nbsp;them.<br>&ofcir;&nbsp;&nbsp;Test 3: Look, touch and smell the scented scarves and score &nbsp;&nbsp;&nbsp;&nbsp;them. <br>&ofcir;&nbsp;&nbsp;Preference: scent or no scent.</p>
+                    <img src="projects/9mask/AspectsReviewedRatioIn5Groups.png" style="width:100%">
+                    
+                    <h5>Findings</h5>
+                    <p>As the pie chart shows in five color coded categories, the elements that go into a face mask based on the collective user experience are ranked in the below ratio: </p>
+                    <p>&ofcir;&nbsp;&nbsp;construction (in blue): 27%</p>
+                    <p>&ofcir;&nbsp;&nbsp;user experience (in green): 24%</p>
+                    <p>&ofcir;&nbsp;&nbsp;material (in yellow): 21%</p>
+                    <p>&ofcir;&nbsp;&nbsp;manufacturing (in pink): 20%</p>
+                    <p>&ofcir;&nbsp;&nbsp;look (in purple): 8%</p>
+                    
+                    <p>For the product enginners and manufacturs, the finer cuts of each subcategory are the design optimization intelligence for allocating limited design and manufacturing resources to the most valued features of a face mask so that the next iteration of this product approaches the "ideal mask" in the best possible way. In a pandemic, the look of a mask was the least concern. Fitting became the biggest issue, because all of a sudden, faces in all shapes and sizes were covered in masks, when existing masks had been designed only for a tiny subset of the population. </p>
+                    
+                    <h5>SweetSpotter</h5>
+                    
+                    <img src="projects/9mask/TextCutter.png" style="width:100%">
+                    <p>SweetSpotter takes in a review text document like the above and cuts it into minimum semantic units, which are very likely containing only one product attribute or issue of concern. When the text units are relatively "pure" in the topic, the Machine can be trained more effectively to classify them into the right categories. After several rounds of labeling and relabeling, I curated attribute (aka aspect) categories into 31 classes, from non-product or general product to specific feature on a mask with more granular subcategories, like "fit @ face", "fit @ nose", "fit @ ears", and "fit @ mouth". </p>
+                    
+                    <p> Training the Machine to read texts like I would classify them was the easier part. Labeling the dataset was a lot more demanding on the conceptualization of what goes into the engineering of a face mask. I could confidently classify fit into different areas on the face because I used to attend fitting sessions on snug-fitting wearable products to know what to watch out. Dataset labeling is a domain dependent task. The Language Model bert-base-uncased achieved 2021 state-of-the-art accuracy (83% for 31-attributes and 91% for 3-sentiments classification) with a small training dataset (1200+), thanks to such carefully labeled training dataset.</p>
+                    
+                    <img src="projects/9mask/confusion_matrix.png" style="width:100%">
+                    <p>This confusion matrix shows how accurate the classifier became on the 31-attributes classes after fine-tuning with the training dataset. Values on the diagonal line are correctly classified. Values off that are misclassified.</p>
 
-                    <p>Below is the presentation poster from the UHM Symposium.</p>
-                    <img src="projects/3scentedtextile/consumer-preferernce-1-728.jpg" style="width:150%">
+
+ 
+                    <h5>Architecture</h5>
+                    
+                    <img src="projects/9mask/ReviewJourney.png" style="width:100%">
+                    <p>SweetSpotter pipeline consists of four "C" steps:</p>
+                    <p>&ofcir;&nbsp;&nbsp;Collector: web scraper in RSelenium collected all product listings under the search keyword "face mask" and then scraped till the last review on the last page on each of the deduplicated products based on ASIN - the unique product ID on Amazon. </p>
+                    <p>&ofcir;&nbsp;&nbsp;Cutter: human language is messy, with spelling errors, repetitions, ramblings, or mixed messages. The Cutter chopped up the review document into digestible bites for the Machine, reducing the chances of having multiple categories in one text unit.</p>
+                    <p>&ofcir;&nbsp;&nbsp;Classifier: pre-trained transformer bert-base-uncased performed the best for the classification task and the dataset size in comparison to other bert transformers or tagging-based NLP pipeline Snippext. Huggingface and Google Colab are great open source platforms to train a transformer.</p>
+                    <p>&ofcir;&nbsp;&nbsp;Compiler: after aspect-sentiment classification over ~400K text units was assembled into one database, normalizing each attribute and sentiment against the total gives a directly comparable sense of scale of how important and (dis)liked each product feature is for users collectively.</p>
+                    
+                    <img src="projects/9mask/AspectTraining.png" style="width:100%">
+                    <p>The above graph shows how performance metrics, accuracy and weighted F1 score, trended over the steps during the training process of the aspect classifier. After around 1000 steps, both metrics are hovering above 80%.</p>
+                    
+                    <h5>Most Disliked Mask Features</h5>
+                    <img src="projects/9mask/TopNegativeAspects.png" style="width:100%">
+                    <p>Odor was mentioned ~6000 times in the ~400K review units and ~5000 was negative about it. This is very much understandable, because people were wearing masks air-tight over their noses, often for hours straight. Any product odor, either from material, manufacturing, shipping or storing, can be "right under your nose" and irritating. With this knowledge, the manufacturers and sellers of face masks can run a diagnostic to find the odor source and remove it. It could be an easy fix, but a big boost to their Amazon star rating.</p>
+                    <p>This is what SweetSpotter can do: find the sweet spots to improve on a product by accurately targeting the most painfully felt but effectively fixable features informed by the design intelligence distilled from massive consumer reviews.</p>
                     
                 </div>
             </div>
-
-            
-            
+                    
         </section>
-        
-                   
+            
            <footer class="footer">
                 <div class="row">
                     <div class ="col span-1-of-2">
@@ -224,9 +251,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <p> &copy; 2021-2022 by Sophie X Sun. All Rights Reserved. </p>
+                    <p> &copy; 2021~2022 by Sophie X Sun. All Rights Reserved. </p>
                 </div>
-            </footer>  
+            </footer> 
         
     </body>
 </html>
