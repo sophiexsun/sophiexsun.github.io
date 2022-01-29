@@ -236,24 +236,31 @@ PROJECTS
     width:100%;
     color: #553b2f;
     background-color: #fff;
-    opacity: 0.77;
+    opacity: 0.85;
     padding-left: 10px;
     padding-right: 0px;
     text-align: center;
 }
 
 .project-text p{
-    font-size: 80%;
+    font-size: 70%;
 }
 
 .project-photo{
     width: 100%;
     margin: 0;
     overflow: hidden;
-
 }
 
 .project-photo img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: transform 0.5s, opacity 0.8s;
+}
+
+.project-photo img:hover{
     width: 100%;
     height: auto;
     border-radius: 20px;
